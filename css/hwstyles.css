@@ -1,0 +1,139 @@
+header, nav, main, footer {
+  text-align: center;
+}
+/*Navigation Section*/
+nav a {
+  display: inline-block;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: #00FF00;
+  text-decoration: none; /* Remove underline from links */
+}
+
+.homework-nav a {
+  display: inline-block;
+  padding: .5rem;
+  font-size: .75rem;
+  color: #00FF00;
+  text-decoration: none; /* Remove underline from links */
+}
+
+.homework-nav a:hover {
+  color: #fff;
+  background-color: #173f73;
+  font-size: 1rem;
+  border-bottom: 2px solid orange;
+}
+
+.homework-nav a.active{
+  font-weight: bold;
+  color: yellow
+}
+
+nav a:hover {
+  color: #fff;
+  background-color: #173f73;
+  font-size: 2rem;
+  border-bottom: 2px solid orange;
+}
+
+.homework-nav {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-bottom: .5rem;
+}
+
+/*General Bodies, Headers, Footers, Plus some MISC UI stuff*/
+main {
+  display: flex; /* Use Flexbox for layout */
+  justify-content: center; /* Center the items horizontally */
+  gap: 2rem;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  background-color: #000000;
+  color: #FFFFFF; /* Set text color to white for contrast */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;  /* Set line height for better readability */
+}
+
+footer {
+  color:yellowgreen;
+  font-size:.5rem;
+}
+
+/*Languages CSS rules*/
+
+.language-page img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.language-examples{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.language-examples img{
+  width: 28;
+  height: 20rem;
+  object-fit: contain;
+}
+
+#about-language{
+  margin-inline: 10rem;
+  padding: 0 1rem;
+  color:palevioletred
+}
+
+/*Op Sys CSS Rules */ 
+.opsys-entry{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.opsys-entry-text{
+  max-width: 30rem;
+  color:palevioletred
+}
+
+/*datastructures CSS Rules*/
+.datastructures-entry{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.datastructures-entry-text{
+  max-width: 30rem;
+  color:palevioletred
+}
+
+#table-header {
+  background-color: #173f73; /* Dark blue background for header */
+  color: #FFFFFF; /* White text for header */
+}
+
+.table-row {
+  background-color: #1058aa; /* Light gray background for rows */
+} 
+
+th, td {
+  border: 1px solid white;
+  padding: 0.5rem 1rem;
+}
+
+/*Networking CSS Rules*/
+
+.networking-entry-text{
+  max-width: 45rem;
+  color:palevioletred
+}

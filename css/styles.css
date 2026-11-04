@@ -71,6 +71,19 @@ footer {
   text-align: left;
 }
 
+.homework-entry {
+  font-size: 1rem;
+  color: #00FF00;
+  text-decoration: none;
+}
+
+.homework-entry:hover {
+  color: #fff;
+  background-color: #173f73;
+  font-size: 1.2rem;
+  border-bottom: 2px solid orange;
+}
+
 #table-header {
   background-color: #173f73; /* Dark blue background for header */
   color: #FFFFFF; /* White text for header */

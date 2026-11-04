@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Languages</title>
+    <link rel="stylesheet" href="css/hwstyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a class="active" href="homework.html">Homework</a>
+        </nav>
+    </header>
+    <main>
+            <nav class="homework-nav">
+            <a class="active" href="languages.html">Programming Languages</a>
+            <a href="operatingsystems.html">Operating Systems</a>
+            <a href="datastructures.html">Data Structures</a>
+            <a href="networking.html">Networking</a>
+        </nav>
+
+        <figure>
+            <img src="img/languages.jpg" alt="A cloud of various programming languages.">
+            <figcaption>You can use me to speak to computers!</figcaption>
+        </figure>
+
+        <p id="about-language">
+            Programming languages are a core part of computer science. These languages allow humans to direct and translate logical ideas into executable instructions for a computer. There are hundreds of languages, ranging from high-level, which is easier for humans to read, to low-level, which is closer to the instructions a computer would receive. These languages each serve different purposes, some are for databases like SQL, some structure webpages like HTML, and others like Python or Java are for general application development and scripting. Each language generally has its ups and downs leaving programmers to decide which is best fit for a particular project. 
+        </p>
+        
+        <div class="language-examples">
+            <figure>
+            <img src="img/python.jpg" alt="Python Language Example">
+            <figcaption>Python</figcaption>
+        </figure>
+
+        <figure>
+            <img src="img/java.jpg" alt="Java Language Example">
+            <figcaption>Java</figcaption>
+        </figure>
+        </div>
+    </main>
+    <footer>
+        <img src="img/csumblogo.jpg" alt="CSUMB Logo">
+        <p>&copy; 2026 Kaleb Wombacher-Trolinger. All rights reserved.</p>
+        <p>This site is for academic purposes only.</p>
+        <p>CST 336 Internet Programming.</p>
+    </footer>
+
+    <audio id="page-sound" autoplay src="Mambo.mp3"></audio>
+    <script>
+        /*The below is javascript for lowering the volume of the page changing sound effect*/
+        document.querySelector("#page-sound").volume = 0.25;
+    </script>
+</body>
+</html>

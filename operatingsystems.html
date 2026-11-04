@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operating Systems</title>
+    <link rel="stylesheet" href="css/hwstyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a class="active" href="homework.html">Homework</a>
+        </nav>
+    </header>
+    <main>
+        <nav class="homework-nav">
+            <a href="languages.html">Programming Languages</a>
+            <a class="active" href="operatingsystems.html">Operating Systems</a>
+            <a href="datastructures.html">Data Structures</a>
+            <a href="networking.html">Networking</a>
+        </nav>
+
+        <div class="opsys-entry">
+            <figure>
+            <img src="img/opsys.jpg" alt="A visual pipeline of where Operating Systems fits in with users and hardware interaction.">
+            </figure>
+            <p class="opsys-entry-text">
+                Operating Systems are the core of what makes computers functional for users. 
+                They are system mounted software which manages computer hardware and software resources while also acting as the middle man between the user and any applications or physical devices being used on the computer. 
+                Your operating system determines what program gets what memory and when, and helps prevent software from accessing memory or resources it does not need.
+                Additionally it helps manage security permissions for users, devices, and software. 
+                It can be difficult to exactly define an operating system in few words, but the best comparison is probably a "manager" or "director" of your computer.
+            </p>
+        </div>
+        <figure>
+            <img src="img/necoarcpc.jpg" alt="An image of Neco Arc using TempleOS.">
+            </figure>
+            <p class="opsys-entry-text">
+                Although there are a great deal of OSes or OS variations out there, a handful of them dominate the market.
+                Namely Android, Windows, IOS, macOS and Linux are the most commonly used options, but other options do exist even if they're not popular. 
+            </p>
+    </main>
+    <footer>
+        <img src="img/csumblogo.jpg" alt="CSUMB Logo">
+        <p>&copy; 2026 Kaleb Wombacher-Trolinger. All rights reserved.</p>
+        <p>This site is for academic purposes only.</p>
+        <p>CST 336 Internet Programming.</p>
+    </footer>
+    <audio id="page-sound" autoplay src="Mambo.mp3"></audio>
+    <script>
+        /*The below is javascript for lowering the volume of the page changing sound effect*/
+        document.querySelector("#page-sound").volume = 0.25;
+    </script>
+</body>
+</html>

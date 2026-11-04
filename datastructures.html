@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Structures</title>
+    <link rel="stylesheet" href="css/hwstyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a class="active" href="homework.html">Homework</a>
+        </nav>
+    </header>
+    <main>
+        <nav class="homework-nav">
+            <a href="languages.html">Programming Languages</a>
+            <a href="operatingsystems.html">Operating Systems</a>
+            <a class="active" href="datastructures.html">Data Structures</a>
+            <a href="networking.html">Networking</a>
+        </nav>
+
+        <div class="datastructures-entry">
+            <p class="datastructures-entry-text">
+                A data structure is essentially a format for managing and storing data in computer memory. You may often hear this as "data structures and algorithms"
+                that is because the data structure itself is essentially just a container, and algorithms are the instruction sets we use to access and manipulate that data.
+                Algorithms however are beyond the description of this webpage. Data structures exist in two primary classifications as either linear or non-linear structures.
+                Linear structures arange their data sequentially, such as in an array or a linked list. Non-linear structures store in non-sequentially often hierarchachly such as in a tree, or with key-value pairs such as in a hash table. 
+            </p>
+            <figure>
+            <img src="img/structures.jpg" alt="A chart of various common data structures.">
+            </figure>
+        </div>
+
+        <table>
+            <caption>Common Data Structures and their type</caption>
+            <thead>
+                <tr id="table-header">
+                    <th scope="col">Data Structure</th>
+                    <th scope="col">Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-row">
+                    <td>List</td>
+                    <td>Linear</td>
+                </tr>
+                <tr class="table-row">
+                    <td>Array</td>
+                    <td>Linear</td>
+                </tr>
+                <tr class="table-row">
+                    <td>Stack</td>
+                    <td>Linear</td>
+                </tr>
+                <tr class="table-row">
+                    <td>Queue</td>
+                    <td>Linear</td>
+                </tr>
+                <tr class="table-row">
+                    <td>Heap</td>
+                    <td>Non-Linear</td>
+                </tr>
+                <tr class="table-row">
+                    <td>Tree</td>
+                    <td>Non-Linear</td>
+                </tr>
+                <tr class="table-row">
+                    <td>Suffix Tree</td>
+                    <td>Non-Linear</td>
+                </tr>
+                <tr class="table-row">
+                    <td>Graph</td>
+                    <td>Non-Linear</td>
+                </tr>
+                <tr class="table-row">
+                    <td>Hash Table</td>
+                    <td>Non-Linear</td>
+                </tr>
+                </tbody>
+        </table>
+    </main>
+    <footer>
+        <img src="img/csumblogo.jpg" alt="CSUMB Logo">
+        <p>&copy; 2026 Kaleb Wombacher-Trolinger. All rights reserved.</p>
+        <p>This site is for academic purposes only.</p>
+        <p>CST 336 Internet Programming.</p>
+    </footer>
+    <audio id="page-sound" autoplay src="Mambo.mp3"></audio>
+    <script>
+        /*The below is javascript for lowering the volume of the page changing sound effect*/
+        document.querySelector("#page-sound").volume = 0.25;
+    </script>
+</body>
+</html>
