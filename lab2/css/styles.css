@@ -1,0 +1,41 @@
+body{
+    background-image: url("../img/numbers.jpg");
+    background-size: cover;
+    background-position: center;
+
+    color: #FFFFFF;
+}
+
+#main {
+  display: flex; /* Use Flexbox for layout */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center the items vertically */
+  gap: .5rem;
+
+  width: min(32rem);
+  box-sizing: border-box;
+  margin: 1rem auto;
+  padding: 1.5;
+
+  background-color: rgb(56, 53, 53, 0.7); /*fourth number is opacity*/
+  padding: 1rem;
+  border-radius: 16px;
+}
+
+header{
+    display: flex; /* Use Flexbox for layout */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center the items vertically */
+    gap: .5rem;
+
+    width: min(64rem);
+    box-sizing: border-box;
+    margin: 1rem auto;
+    padding: 1.5;
+
+    background-color: rgb(56, 53, 53, 0.7); /*fourth number is opacity*/
+    padding: 1rem;
+    border-radius: 16px;
+}
