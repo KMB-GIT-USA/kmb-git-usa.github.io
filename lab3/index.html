@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>US Geography Quiz</title>
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+<body class="text-center">
+  <h1 class="p-5 bg-info">US Geography Quiz</h1>
+
+  <h3><span id="markImg1"></span>What is the capital of California?</h3>
+  <input type="text" id="q1">
+  <br><br>
+  <div id="q1Feedback"></div>
+  <br><br>
+
+  <h3><span id="markImg2"></span>What is the longest river?</h3>
+  <select id="q2">
+    <option value="">Select One</option>
+    <option value="ms">Mississippi</option>
+    <option value="mo">Missouri</option>
+    <option value="co">Colorado</option>
+    <option value="de">Delaware</option>
+  </select>
+  <br><br>
+  <div id="q2Feedback"></div>
+  <br><br>
+
+  <h3><span id="markImg3"></span>What presidents are carved into Mount Rushmore?</h3>
+    <input type="checkbox" id="Jackson"> <label for="Jackson">A. Jackson</label>
+    <input type="checkbox" id="Franklin"> <label for="Franklin">B. Franklin</label>
+    <input type="checkbox" id="Jefferson"> <label for="Jefferson">T. Jefferson</label>
+    <input type="checkbox" id="Roosevelt"> <label for="Roosevelt">T. Roosevelt</label>
+  <br><br>
+  <div id="q3Feedback"></div>
+  <br><br>
+
+  <h3><span id="markImg4"></span>What is the smallest US State?</h3>
+    <div id="q4Choices"></div>
+  <br><br>
+  <div id="q4Feedback"></div>
+
+  <h3><span id="markImg5"></span>What state was the race horse "Secretariat" born in?</h3>
+  <input type="text" id="q5">
+  <br><br>
+  <div id="q5Feedback"></div>
+  <br><br>
+
+  <h3><span id="markImg6"></span>Which was the last state to join the US?</h3>
+  <select id="q6">
+    <option value="">Select One</option>
+    <option value="hi">Hawaii</option>
+    <option value="ca">California</option>
+    <option value="ak">Alaska</option>
+    <option value="nm">New Mexico</option>
+  </select>
+  <br><br>
+  <div id="q6Feedback"></div>
+  <br><br>
+
+  <h3><span id="markImg7"></span>What is my favorite territory?</h3>
+    <div id="q7Choices"></div>
+  <br><br>
+  <div id="q7Feedback"></div>
+
+  <h3><span id="markImg8"></span>Which of these Japanese race horses were born in the US?</h3>
+    <div id="q8Choices"></div>
+  <br><br>
+  <div id="q8Feedback"></div>
+
+  <h3><span id="markImg9"></span>Which state were the selected Horses born in?</h3>
+  <select id="q9">
+    <option value="">Select One</option>
+    <option value="al">Alabama</option>
+    <option value="ak">Alaska</option>
+    <option value="az">Arizona</option>
+    <option value="ar">Arkansas</option>
+    <option value="ca">California</option>
+    <option value="co">Colorado</option>
+    <option value="ct">Connecticut</option>
+    <option value="de">Delaware</option>
+    <option value="fl">Florida</option>
+    <option value="ga">Georgia</option>
+    <option value="hi">Hawaii</option>
+    <option value="id">Idaho</option>
+    <option value="il">Illinois</option>
+    <option value="in">Indiana</option>
+    <option value="ia">Iowa</option>
+    <option value="ks">Kansas</option>
+    <option value="ky">Kentucky</option>
+    <option value="la">Louisiana</option>
+    <option value="me">Maine</option>
+    <option value="md">Maryland</option>
+    <option value="ma">Massachusetts</option>
+    <option value="mi">Michigan</option>
+    <option value="mn">Minnesota</option>
+    <option value="ms">Mississippi</option>
+    <option value="mo">Missouri</option>
+    <option value="mt">Montana</option>
+    <option value="ne">Nebraska</option>
+    <option value="nv">Nevada</option>
+    <option value="nh">New Hampshire</option>
+    <option value="nj">New Jersey</option>
+    <option value="nm">New Mexico</option>
+    <option value="ny">New York</option>
+    <option value="nc">North Carolina</option>
+    <option value="nd">North Dakota</option>
+    <option value="oh">Ohio</option>
+    <option value="ok">Oklahoma</option>
+    <option value="or">Oregon</option>
+    <option value="pa">Pennsylvania</option>
+    <option value="ri">Rhode Island</option>
+    <option value="sc">South Carolina</option>
+    <option value="sd">South Dakota</option>
+    <option value="tn">Tennessee</option>
+    <option value="tx">Texas</option>
+    <option value="ut">Utah</option>
+    <option value="vt">Vermont</option>
+    <option value="va">Virginia</option>
+    <option value="wa">Washington</option>
+    <option value="wv">West Virginia</option>
+    <option value="wi">Wisconsin</option>
+    <option value="wy">Wyoming</option>
+  </select>
+  <br><br>
+  <div id="q9Feedback"></div>
+  <br><br>
+
+  <h3><span id="markImg10"></span>What is the, case sensitive, preamble to the US constitution?</h3>
+  <input type="text" id="q10">
+  <br><br>
+  <div id="q10Feedback"></div>
+  <br><br>
+
+  <h3 id="validationFdbk" class="bg-danger text-white"></h3>
+  <button class="btn btn-outline-primary">Submit Quiz</button>
+  <h2 id="totalScore" class="text-info"></h2>
+  <h3 id="winMessage" class="text-info"></h3>
+
+  <h3 id="totalAttempts"></h3>
+  
+
+  <script src="js/script.js"></script>
+
+  <footer>
+        <img src="img/csumblogo.jpg" alt="CSUMB Logo">
+        <p>&copy; 2026 Kaleb Wombacher-Trolinger. All rights reserved.</p>
+        <p>This site is for academic purposes only.</p>
+        <p>CST 336 Internet Programming.</p>
+    </footer>
+</body>
+</html>
