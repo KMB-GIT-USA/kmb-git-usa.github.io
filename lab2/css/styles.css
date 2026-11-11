@@ -39,3 +39,10 @@ header{
     padding: 1rem;
     border-radius: 16px;
 }
+
+footer {
+  color:yellowgreen;
+  font-size:.5rem;
+  text-align: center;
+  margin-top: auto;
+}
