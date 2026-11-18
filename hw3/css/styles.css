@@ -25,6 +25,10 @@ th, td {
   text-align: left;
 }
 
+button{
+  margin-top: 1rem;
+}
+
 footer {
   color:rgb(0, 0, 0);
   font-size:.5rem;
