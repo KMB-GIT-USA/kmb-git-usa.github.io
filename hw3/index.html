@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Earthquakes by date</title>
+</head>
+<body>
+    <main>
+    <h1>Earthquake Finder</h1>
+
+    <label>Start of Date range:
+        <input type="date" id="dateStart" name="dateStart"><br>
+    </label>
+
+    <label>End of Date range:
+        <input type="date" id="dateEnd" name="dateEnd"><br>
+    </label>
+
+    <label>Magnitude:
+        <input type="number" id="mag" name="mag" min="0" max="9" step="1"><br>
+    </label>
+
+    <button id="searchButton">Find Earthquakes</button>
+
+    <table>
+            <caption>Earthquakes Found:</caption>
+            <thead>
+                <tr id="table-header">
+                    <th scope="col">Date</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Magnitude</th>
+                </tr>
+            </thead>
+            <tbody id="quakeResults">    
+            </tbody>
+        </table>
+
+    
+    <script src="js/scripts.js"></script>
+    </main>
+    <footer>
+        <img src="img/csumblogo.jpg" alt="CSUMB Logo">
+        <p>&copy; 2026 Kaleb Wombacher-Trolinger. All rights reserved.</p>
+        <p>This site is for academic purposes only.</p>
+        <p>CST 336 Internet Programming.</p>
+    </footer>
+</body>
+</html>
