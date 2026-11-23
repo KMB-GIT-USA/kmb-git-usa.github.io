@@ -34,9 +34,10 @@ app.get('/planet', (req, res) => {
 
 app.get('/pod', async(req, res)=>{
     let apiKey ="9mUzIkhlZCZaOoMfspg7jMmwZCZ4LiRHtkgkambD";
-    let url =`https://api.nasa.gov/planetary/apod?api_key=${apiKey}`;
+    let url =`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=2026-11-22`;
     console.log(url);
     let response = await fetch(url);
+    console.log("Status:", response.status);
     let data = await response.json();
     console.log(data.date);
     console.log(data.title);
