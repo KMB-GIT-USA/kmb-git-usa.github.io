@@ -47,6 +47,8 @@ app.get('/pod', async(req, res)=>{
 });
 
 
-app.listen(3000, () => {
-   console.log('server started');
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, "0.0.0.0", () => {
+   console.log(`server started on port ${PORT}`);
 });
