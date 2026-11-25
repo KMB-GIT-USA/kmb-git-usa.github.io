@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Languages</title>
+    <link rel="stylesheet" href="css/hwstyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <%- include("partials/headernav") %>
+    <main>
+            <%- include("partials/nav") %>
+
+        <figure>
+            <img src="img/languages.jpg" alt="A cloud of various programming languages.">
+            <figcaption>You can use me to speak to computers!</figcaption>
+        </figure>
+
+        <p id="about-language">
+            Programming languages are a core part of computer science. These languages allow humans to direct and translate logical ideas into executable instructions for a computer. There are hundreds of languages, ranging from high-level, which is easier for humans to read, to low-level, which is closer to the instructions a computer would receive. These languages each serve different purposes, some are for databases like SQL, some structure webpages like HTML, and others like Python or Java are for general application development and scripting. Each language generally has its ups and downs leaving programmers to decide which is best fit for a particular project. 
+        </p>
+        
+        <div class="language-examples">
+            <figure>
+            <img src="img/python.jpg" alt="Python Language Example">
+            <figcaption>Python</figcaption>
+        </figure>
+
+        <figure>
+            <img src="img/java.jpg" alt="Java Language Example">
+            <figcaption>Java</figcaption>
+        </figure>
+        </div>
+
+        <section>
+            <h3>Some Languages Types and their Metadata</h3>
+
+            <ul>
+                <% languages.forEach(language => { %>
+                <li>
+                    <strong><%= language.name %></strong>
+                    <%= language.type %>
+                    <% if (language.extensions) { %>
+                    File extensions: 
+                    <%= language.extensions.slice(0,4).join(", ") %>
+                <% } %>
+                </li>
+                <% }) %>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Languages Used in the Node.js Repository</h3>
+
+            <p>
+                This info comes from the Github REST API, it tells us how many bytes of code there are in each language present in the Node.js repository.
+            </p>
+            <br>
+
+            <ul>
+                <% Object.entries(repoLanguages).forEach(([language, bytes]) => {%>
+                <li>
+                    <strong><%= language %></strong>:
+                    <%= bytes.toLocaleString() %> bytes
+                </li>
+                <% }) %>
+            </ul>
+        </section>
+    </main>
+    <%- include('partials/footer.ejs')%>
+
+    <audio id="page-sound" autoplay src="/Mambo.mp3"></audio>
+    <script>
+        /*The below is javascript for lowering the volume of the page changing sound effect*/
+        document.querySelector("#page-sound").volume = 0.10;
+    </script>
+</body>
+</html>

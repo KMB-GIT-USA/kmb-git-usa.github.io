@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Networking</title>
+    <link rel="stylesheet" href="css/hwstyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <%- include("partials/headernav") %>
+    </header>
+    <main>
+        <%- include("partials/nav") %>
+        <figure>
+            <img src="img/networking.jpg" alt="A visual of one computer using routing and forwarding to communicate with a second computer.">
+        </figure>
+        <p class="networking-entry-text">
+            Networking is largely about the interconnection of various machines either across different networks using routers, or within local networks using switches.
+            Routers use "routing" to determine the path a packet takes across a network, while forwarding is the process in which a router
+            actually sends the packet to the next hop or stepping stone within the path that has been chosen.
+            Depending on which protocol is being used a router may be given the topology of its routing area, or it may learn about reachable networks from its neighbors.
+
+        </p>
+    </main>
+    <%- include('partials/footer.ejs')%>
+    <audio id="page-sound" autoplay src="Mambo.mp3"></audio>
+    <script>
+        /*The below is javascript for lowering the volume of the page changing sound effect*/
+        document.querySelector("#page-sound").volume = 0.10;
+    </script>
+</body>
+</html>
